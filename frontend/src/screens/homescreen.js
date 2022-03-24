@@ -1,30 +1,17 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-//removed import data from data.js since we now use fetchData
-//to get it on the backend server
+import React, { useEffect } from "react";
 import Product from "../components/product.js";
 import LoadingBox from "../components/loadingbox.js";
 import MessageBox from "../components/messagebox.js";
+import { useDispatch, useSelector } from "react-redux";
+import { listProducts } from "../actions/productactions.js";
 
 export default function HomeScreen() {
-  const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
-
+  const dispatch = useDispatch();
+  const productList = useSelector((state) => state.productList);
+  const { loading, error, products } = productList;
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        setLoading(true);
-        const { data } = await axios.get("/api/products");
-        setLoading(false);
-        setProducts(data);
-      } catch (error) {
-        setError(error.message);
-        setLoading(false);
-      }
-    };
-    fetchData();
-  }, []);
+    dispatch(listProducts());
+  }, [dispatch]);
   return (
     <div>
       {loading ? (
