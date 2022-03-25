@@ -42,7 +42,7 @@ const data = {
     {
       _id: "4",
       name: "Converse Shoes",
-      slug: "converse shoes",
+      slug: "converse-shoes",
       category: "Footwear",
       image: "http://localhost:3000/images/product4.jpg",
       price: 80,
