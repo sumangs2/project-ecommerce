@@ -3,6 +3,7 @@ const data = {
     {
       _id: "1",
       name: "Nike Shoes",
+      slug: "nike-shoes",
       category: "Footwear",
       image: "http://localhost:3000/images/product1.jpg",
       price: 150,
@@ -15,6 +16,7 @@ const data = {
     {
       _id: "2",
       name: "Adidas Pants",
+      slug: "adidas-pants",
       category: "Pants",
       image: "http://localhost:3000/images/product2.jpg",
       price: 45,
@@ -27,6 +29,7 @@ const data = {
     {
       _id: "3",
       name: "Timex Watch",
+      slug: "timex-watch",
       category: "Watch",
       image: "http://localhost:3000/images/product3.jpg",
       price: 10000,
@@ -39,6 +42,7 @@ const data = {
     {
       _id: "4",
       name: "Converse Shoes",
+      slug: "converse-shoes",
       category: "Footwear",
       image: "http://localhost:3000/images/product4.jpg",
       price: 80,
@@ -51,6 +55,7 @@ const data = {
     {
       _id: "5",
       name: "Saucony Shoes",
+      slug: "saucony-shoes",
       category: "Footwear",
       image: "http://localhost:3000/images/product5.jpg",
       price: 100,
@@ -63,6 +68,7 @@ const data = {
     {
       _id: "6",
       name: "New Balance Shirt",
+      slug: "new-balance-shirt",
       category: "Shirt",
       image: "http://localhost:3000/images/product6.jpg",
       price: 50,
