@@ -24,13 +24,18 @@ main {
   border: 1px #404040 solid;
 }
 
-.product img {
-  /*width: 100%px; tempo */
-  height: 400px;
-  max-width: 375px;
-  width: 375px;
+.card-img-top {
+  height: 375px;
 }
 
 .product-info {
   padding: 1rem;
+}
+
+.rating span {
+  color: #ffc000;
+}
+
+.btn-primary {
+  background-color: #f0c040;
 }
