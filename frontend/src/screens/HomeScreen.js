@@ -1,4 +1,6 @@
 import { useEffect, useReducer } from "react";
+import LoadingBox from "../components/LoadingBox.js";
+import MessageBox from "../components/MessageBox.js";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import axios from "axios";
@@ -46,9 +48,9 @@ function HomeScreen() {
       <h1> Featured Products </h1>
       <div className="products">
         {loading ? (
-          <div>Loading...</div>
+          <LoadingBox />
         ) : error ? (
-          <div>{error}</div>
+          <MessageBox variant="danger">{error}</MessageBox>
         ) : (
           <Row>
             {products.map((product) => (
